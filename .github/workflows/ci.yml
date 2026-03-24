@@ -11,8 +11,8 @@ jobs:
         run: echo "Second Step"
 
   goodbye:
-    runs-on: ubuntu-latest
+    name: Goodbye Job
     needs: hello
+    runs-on: windows-latest
     steps:
-      - name: Print Goodbye
-        run: echo "Goodbye"
+      - run: echo "Goodbye"
